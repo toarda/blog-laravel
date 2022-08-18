@@ -18,6 +18,6 @@ class IndexMainController extends Controller
         $data['postsCount'] = Post::all()->count();
         $data['categoriesCount'] = Category::all()->count();
         $data['tagsCount'] = Tag::all()->count();
-        return view('post.index', compact('data'));
+        return view('admin.main.index', compact('data'));
     }
 }
